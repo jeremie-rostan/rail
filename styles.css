@@ -144,6 +144,11 @@ a {
   gap: 1rem;
 }
 
+.page-grid.single-column {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 1380px;
+}
+
 .panel {
   border: 1px solid var(--line);
   border-radius: 16px;
@@ -222,7 +227,7 @@ button {
 }
 
 .content-panel {
-  padding: 1rem;
+  padding: 1.25rem;
   overflow: hidden;
 }
 
@@ -236,7 +241,7 @@ button {
   background: #fff;
   border: 1px solid var(--line);
   border-radius: 14px;
-  padding: 1rem;
+  padding: 1.1rem;
   overflow-x: auto;
 }
 
@@ -250,8 +255,8 @@ button {
 .doc-content th {
   border: 1px solid #d5dce8;
   vertical-align: top;
-  padding: 0.45rem;
-  font-size: 0.93rem;
+  padding: 0.5rem;
+  font-size: 0.95rem;
 }
 
 .doc-content p,
