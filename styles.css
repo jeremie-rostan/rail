@@ -320,6 +320,33 @@ mark.search-hit {
   color: var(--muted);
 }
 
+.infographic-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.infographic-card {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+  padding: 0.9rem;
+}
+
+.infographic-card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.infographic-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #d7e3f3;
+  background: #fff;
+}
+
 .site-footer {
   max-width: 1200px;
   margin: 1rem auto 2rem;

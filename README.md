@@ -9,11 +9,13 @@ Static multi-page website generated from `RAIL 2026 Working Document.docx`.
 - `response.html`: prevention, response SOP, and consequences
 - `eu-ai-act.html`: EU AI Act alignment section
 - `curriculum.html`: integrated curriculum map with grade/unit filters
+- `infographics.html`: dedicated page for RAIL infographic images
 - `action-plan.html`: RAIL action plan section
 - `full-document.html`: redirect to `action-plan.html` for backward compatibility
 - `app.js`: content loading and section rendering logic
 - `styles.css`: responsive K-12-friendly visual design
 - `source.html`: converted HTML source used as canonical content input
+- `assets/infographics/`: extracted infographic image files from DOCX
 
 ## Local preview
 
