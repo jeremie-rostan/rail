@@ -342,18 +342,20 @@ mark.search-hit {
 
 .infographic-card img {
   display: block;
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   height: auto;
   border-radius: 10px;
   border: 1px solid #d7e3f3;
   background: #fff;
-  max-height: 560px;
+  max-height: calc(100vh - 230px);
   object-fit: contain;
+  margin: 0 auto;
 }
 
 @media (max-width: 900px) {
   .infographic-card img {
-    max-height: 430px;
+    max-height: calc(100vh - 180px);
   }
 }
 
