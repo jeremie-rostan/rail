@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RAIL Strategy 2026</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./index.html">
+        <div class="brand-mark">R</div>
+        <div class="brand-text"><strong>RAIL Strategy</strong>2026 K-12 Portal</div>
+      </a>
+      <button id="menu-toggle" class="menu-toggle" type="button">Menu</button>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <a aria-current="page" href="./index.html">Home</a>
+        <a href="./incidents.html">Incident Categories</a>
+        <a href="./response.html">Prevention & Response</a>
+        <a href="./eu-ai-act.html">EU AI Act</a>
+        <a href="./curriculum.html">Curriculum Map</a>
+        <a href="./full-document.html">Full Document</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-card">
+      <h1>RAIL Strategy Website</h1>
+      <p>Navigate every element of the 2026 RAIL working document with focused pages, searchable content, quick links, and curriculum filters built for school leaders, teachers, and staff.</p>
+    </div>
+  </section>
+
+  <main class="page-grid">
+    <aside class="panel tools-panel">
+      <h2>How To Use This Site</h2>
+      <p>Start from a section card, then use page-level search and jump links to find policies, scenarios, and resources quickly.</p>
+      <label class="label" for="search-input">Search Tip</label>
+      <input id="search-input" disabled value="Use search on section pages" />
+      <button class="btn-soft" disabled>Section pages only</button>
+    </aside>
+
+    <section class="panel content-panel">
+      <p class="status">Select a section to explore the strategy.</p>
+      <div class="home-grid">
+        <a class="home-card" href="./incidents.html">
+          <h3>AI Incident Categories</h3>
+          <p>Explore risks and examples by core value and role (students, teachers, leaders, staff).</p>
+        </a>
+        <a class="home-card" href="./response.html">
+          <h3>Prevention, SOP & Consequences</h3>
+          <p>Review prevention controls, incident response steps, severity levels, and restoration pathways.</p>
+        </a>
+        <a class="home-card" href="./eu-ai-act.html">
+          <h3>EU AI Act Alignment</h3>
+          <p>Access prohibited practices and high-risk categories relevant to educational settings.</p>
+        </a>
+        <a class="home-card" href="./curriculum.html">
+          <h3>Digital Citizenship Curriculum Map</h3>
+          <p>Browse the integrated AI + digital citizenship map with lesson links and grade bands.</p>
+        </a>
+        <a class="home-card" href="./full-document.html">
+          <h3>Complete Source Document</h3>
+          <p>Open the full converted document when you need one continuous view of all original content.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">Prepared from the original RAIL 2026 working document content for web deployment.</footer>
+
+  <script>
+    const menuToggle = document.querySelector("#menu-toggle");
+    const mainNav = document.querySelector("#main-nav");
+    menuToggle?.addEventListener("click", () => mainNav.classList.toggle("open"));
+  </script>
+</body>
+</html>
