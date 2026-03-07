@@ -148,6 +148,20 @@ function tidyContent(root) {
   });
 }
 
+function removeLeadingStartTitle(root, startText) {
+  if (!startText) return;
+  const nodes = Array.from(root.querySelectorAll("p, li, td, th"));
+  for (const el of nodes) {
+    const text = (el.textContent || "").trim().replace(/\s+/g, " ");
+    if (!text) continue;
+    if (text === startText) {
+      el.remove();
+      continue;
+    }
+    break;
+  }
+}
+
 function buildJumpLinks() {
   if (!jumpList || !contentRoot) return;
   jumpList.innerHTML = "";
@@ -269,6 +283,9 @@ async function renderPage() {
   contentRoot.appendChild(fragment);
 
   tidyContent(contentRoot);
+  if (pageType !== "full") {
+    removeLeadingStartTitle(contentRoot, config.start);
+  }
   buildJumpLinks();
   attachSearch();
   attachCurriculumFilters();
