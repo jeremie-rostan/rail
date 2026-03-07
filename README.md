@@ -15,6 +15,7 @@ Static multi-page website generated from `RAIL 2026 Working Document.docx`.
 - `action-plan.html`: RAIL action plan section
 - `full-document.html`: redirect to `action-plan.html` for backward compatibility
 - `app.js`: content loading and section rendering logic
+- `nav.js`: shared top navigation renderer for consistent menu links on every page
 - `styles.css`: responsive K-12-friendly visual design
 - `source.html`: converted HTML source used as canonical content input
 - `assets/infographics/`: extracted infographic image files from DOCX

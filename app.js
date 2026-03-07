@@ -42,17 +42,9 @@ const searchBtn = document.querySelector("#search-btn");
 const clearBtn = document.querySelector("#clear-btn");
 const gradeFilter = document.querySelector("#grade-filter");
 const unitFilter = document.querySelector("#unit-filter");
-const menuToggle = document.querySelector("#menu-toggle");
-const mainNav = document.querySelector("#main-nav");
 
 let activeMarks = [];
 let sourceDoc = null;
-
-if (menuToggle && mainNav) {
-  menuToggle.addEventListener("click", () => {
-    mainNav.classList.toggle("open");
-  });
-}
 
 function setStatus(message) {
   if (status) status.textContent = message;

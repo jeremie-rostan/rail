@@ -14,17 +14,7 @@
         <div class="brand-text"><strong>RAIL Strategy</strong>2026 K-12 Portal</div>
       </a>
       <button id="menu-toggle" class="menu-toggle" type="button">Menu</button>
-      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
-        <a aria-current="page" href="./index.html">Home</a>
-        <a href="./incidents.html">Incident Categories</a>
-        <a href="./response.html">Prevention & Response</a>
-        <a href="./eu-ai-act.html">EU AI Act</a>
-        <a href="./eu-ai-act-summary.html">EU AI Act Summary</a>
-        <a href="./data-protection-gdpr.html">AI Data Protection & GDPR</a>
-        <a href="./curriculum.html">Curriculum Map</a>
-        <a href="./infographics.html">Infographics</a>
-        <a href="./action-plan.html">Action Plan</a>
-      </nav>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation"></nav>
     </div>
   </header>
 
@@ -85,10 +75,6 @@
 
   <footer class="site-footer">Prepared from the original RAIL 2026 working document content for web deployment.</footer>
 
-  <script>
-    const menuToggle = document.querySelector("#menu-toggle");
-    const mainNav = document.querySelector("#main-nav");
-    menuToggle?.addEventListener("click", () => mainNav.classList.toggle("open"));
-  </script>
+  <script src="./nav.js"></script>
 </body>
 </html>
