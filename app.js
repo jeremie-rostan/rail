@@ -134,6 +134,18 @@ function tidyContent(root) {
       el.tagName.toLowerCase() === "p" && el.classList.add("doc-heading");
     }
   });
+
+  // Remove repeated consecutive lines (for example, duplicated section titles from DOCX export).
+  let prev = null;
+  Array.from(root.querySelectorAll("p, li, td, th")).forEach((el) => {
+    const text = (el.textContent || "").trim().replace(/\s+/g, " ");
+    if (!text) return;
+    if (prev && prev === text) {
+      el.remove();
+      return;
+    }
+    prev = text;
+  });
 }
 
 function buildJumpLinks() {
