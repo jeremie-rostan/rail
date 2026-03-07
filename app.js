@@ -15,6 +15,10 @@ const SECTION_CONFIG = {
     start: "ISP Digital Citizenship Curriculum Map",
     end: null
   },
+  action: {
+    start: "RAIL Action Plan",
+    end: "Core Values and Practices (img)"
+  },
   full: {
     start: null,
     end: null
