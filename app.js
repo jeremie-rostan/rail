@@ -19,6 +19,14 @@ const SECTION_CONFIG = {
     start: "RAIL Action Plan",
     end: "Core Values and Practices (img)"
   },
+  euSummary: {
+    start: "EU AI Act Summary",
+    end: "AI and Data Protection"
+  },
+  dataProtection: {
+    start: "AI and Data Protection",
+    end: "Sources"
+  },
   full: {
     start: null,
     end: null

@@ -8,6 +8,8 @@ Static multi-page website generated from `RAIL 2026 Working Document.docx`.
 - `incidents.html`: AI incident categories and examples
 - `response.html`: prevention, response SOP, and consequences
 - `eu-ai-act.html`: EU AI Act alignment section
+- `eu-ai-act-summary.html`: EU AI Act summary section
+- `data-protection-gdpr.html`: AI and Data Protection + AI and GDPR sections
 - `curriculum.html`: integrated curriculum map with grade/unit filters
 - `infographics.html`: dedicated page for RAIL infographic images
 - `action-plan.html`: RAIL action plan section
