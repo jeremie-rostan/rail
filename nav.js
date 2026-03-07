@@ -6,7 +6,6 @@
     ['./index.html', 'Home'],
     ['./incidents.html', 'Incident Categories'],
     ['./response.html', 'Prevention & Response'],
-    ['./eu-ai-act.html', 'EU AI Act'],
     ['./eu-ai-act-summary.html', 'EU AI Act Summary'],
     ['./data-protection-gdpr.html', 'AI Data Protection & GDPR'],
     ['./curriculum.html', 'Curriculum Map'],

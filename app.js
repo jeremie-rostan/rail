@@ -20,8 +20,16 @@ const SECTION_CONFIG = {
     end: "Core Values and Practices (img)"
   },
   euSummary: {
-    start: "EU AI Act Summary",
-    end: "AI and Data Protection"
+    ranges: [
+      {
+        start: "EU AI Act Alignment",
+        end: "ISP Digital Citizenship Curriculum Map"
+      },
+      {
+        start: "EU AI Act Summary",
+        end: "AI and Data Protection"
+      }
+    ]
   },
   dataProtection: {
     start: "AI and Data Protection",
@@ -262,7 +270,17 @@ async function renderPage() {
 
   const config = SECTION_CONFIG[pageType] || SECTION_CONFIG.full;
   const bodyNodes = Array.from(sourceDoc.body.children);
-  const fragmentNodes = cloneRange(bodyNodes, config.start, config.end);
+  let fragmentNodes = [];
+
+  if (Array.isArray(config.ranges) && config.ranges.length) {
+    config.ranges.forEach((range) => {
+      fragmentNodes = fragmentNodes.concat(
+        cloneRange(bodyNodes, range.start, range.end)
+      );
+    });
+  } else {
+    fragmentNodes = cloneRange(bodyNodes, config.start, config.end);
+  }
 
   if (!fragmentNodes.length) {
     setStatus("No section content was found for this page.");
@@ -275,8 +293,9 @@ async function renderPage() {
   contentRoot.appendChild(fragment);
 
   tidyContent(contentRoot);
-  if (pageType !== "full") {
-    removeLeadingStartTitle(contentRoot, config.start);
+  const firstStart = config.start || (config.ranges && config.ranges[0]?.start);
+  if (pageType !== "full" && firstStart) {
+    removeLeadingStartTitle(contentRoot, firstStart);
   }
   buildJumpLinks();
   attachSearch();
